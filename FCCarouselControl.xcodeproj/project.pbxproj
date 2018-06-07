@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBB53E5C20C912CE0061C251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E5B20C912CE0061C251 /* AppDelegate.m */; };
+		DBB53E5F20C912CE0061C251 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E5E20C912CE0061C251 /* ViewController.m */; };
+		DBB53E6220C912CE0061C251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB53E6020C912CE0061C251 /* Main.storyboard */; };
+		DBB53E6420C912D00061C251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB53E6320C912D00061C251 /* Assets.xcassets */; };
+		DBB53E6720C912D00061C251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB53E6520C912D00061C251 /* LaunchScreen.storyboard */; };
+		DBB53E6A20C912D00061C251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E6920C912D00061C251 /* main.m */; };
+		DBB53E7420C912D10061C251 /* FCCarouselControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E7320C912D10061C251 /* FCCarouselControlTests.m */; };
+		DBB53E7F20C912D10061C251 /* FCCarouselControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E7E20C912D10061C251 /* FCCarouselControlUITests.m */; };
+		DBB53E8E20C915C80061C251 /* FCCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB53E8D20C915C80061C251 /* FCCarouselView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBB53E7020C912D10061C251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB53E4F20C912CE0061C251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB53E5620C912CE0061C251;
+			remoteInfo = FCCarouselControl;
+		};
+		DBB53E7B20C912D10061C251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB53E4F20C912CE0061C251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB53E5620C912CE0061C251;
+			remoteInfo = FCCarouselControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBB53E5720C912CE0061C251 /* FCCarouselControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCCarouselControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB53E5A20C912CE0061C251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBB53E5B20C912CE0061C251 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBB53E5D20C912CE0061C251 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBB53E5E20C912CE0061C251 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBB53E6120C912CE0061C251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBB53E6320C912D00061C251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB53E6620C912D00061C251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBB53E6820C912D00061C251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB53E6920C912D00061C251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBB53E6F20C912D10061C251 /* FCCarouselControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCCarouselControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB53E7320C912D10061C251 /* FCCarouselControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCarouselControlTests.m; sourceTree = "<group>"; };
+		DBB53E7520C912D10061C251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB53E7A20C912D10061C251 /* FCCarouselControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCCarouselControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB53E7E20C912D10061C251 /* FCCarouselControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCarouselControlUITests.m; sourceTree = "<group>"; };
+		DBB53E8020C912D10061C251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB53E8C20C915C80061C251 /* FCCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCarouselView.h; sourceTree = "<group>"; };
+		DBB53E8D20C915C80061C251 /* FCCarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCarouselView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB53E5420C912CE0061C251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E6C20C912D10061C251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E7720C912D10061C251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBB53E4E20C912CE0061C251 = {
+			isa = PBXGroup;
+			children = (
+				DBB53E5920C912CE0061C251 /* FCCarouselControl */,
+				DBB53E7220C912D10061C251 /* FCCarouselControlTests */,
+				DBB53E7D20C912D10061C251 /* FCCarouselControlUITests */,
+				DBB53E5820C912CE0061C251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB53E5820C912CE0061C251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB53E5720C912CE0061C251 /* FCCarouselControl.app */,
+				DBB53E6F20C912D10061C251 /* FCCarouselControlTests.xctest */,
+				DBB53E7A20C912D10061C251 /* FCCarouselControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB53E5920C912CE0061C251 /* FCCarouselControl */ = {
+			isa = PBXGroup;
+			children = (
+				DBB53E5A20C912CE0061C251 /* AppDelegate.h */,
+				DBB53E5B20C912CE0061C251 /* AppDelegate.m */,
+				DBB53E5D20C912CE0061C251 /* ViewController.h */,
+				DBB53E5E20C912CE0061C251 /* ViewController.m */,
+				DBB53E8C20C915C80061C251 /* FCCarouselView.h */,
+				DBB53E8D20C915C80061C251 /* FCCarouselView.m */,
+				DBB53E6020C912CE0061C251 /* Main.storyboard */,
+				DBB53E6320C912D00061C251 /* Assets.xcassets */,
+				DBB53E6520C912D00061C251 /* LaunchScreen.storyboard */,
+				DBB53E6820C912D00061C251 /* Info.plist */,
+				DBB53E6920C912D00061C251 /* main.m */,
+			);
+			path = FCCarouselControl;
+			sourceTree = "<group>";
+		};
+		DBB53E7220C912D10061C251 /* FCCarouselControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB53E7320C912D10061C251 /* FCCarouselControlTests.m */,
+				DBB53E7520C912D10061C251 /* Info.plist */,
+			);
+			path = FCCarouselControlTests;
+			sourceTree = "<group>";
+		};
+		DBB53E7D20C912D10061C251 /* FCCarouselControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB53E7E20C912D10061C251 /* FCCarouselControlUITests.m */,
+				DBB53E8020C912D10061C251 /* Info.plist */,
+			);
+			path = FCCarouselControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB53E5620C912CE0061C251 /* FCCarouselControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB53E8320C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControl" */;
+			buildPhases = (
+				DBB53E5320C912CE0061C251 /* Sources */,
+				DBB53E5420C912CE0061C251 /* Frameworks */,
+				DBB53E5520C912CE0061C251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCCarouselControl;
+			productName = FCCarouselControl;
+			productReference = DBB53E5720C912CE0061C251 /* FCCarouselControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB53E6E20C912D10061C251 /* FCCarouselControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB53E8620C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControlTests" */;
+			buildPhases = (
+				DBB53E6B20C912D10061C251 /* Sources */,
+				DBB53E6C20C912D10061C251 /* Frameworks */,
+				DBB53E6D20C912D10061C251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB53E7120C912D10061C251 /* PBXTargetDependency */,
+			);
+			name = FCCarouselControlTests;
+			productName = FCCarouselControlTests;
+			productReference = DBB53E6F20C912D10061C251 /* FCCarouselControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBB53E7920C912D10061C251 /* FCCarouselControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB53E8920C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControlUITests" */;
+			buildPhases = (
+				DBB53E7620C912D10061C251 /* Sources */,
+				DBB53E7720C912D10061C251 /* Frameworks */,
+				DBB53E7820C912D10061C251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB53E7C20C912D10061C251 /* PBXTargetDependency */,
+			);
+			name = FCCarouselControlUITests;
+			productName = FCCarouselControlUITests;
+			productReference = DBB53E7A20C912D10061C251 /* FCCarouselControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB53E4F20C912CE0061C251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "魏晓堃";
+				TargetAttributes = {
+					DBB53E5620C912CE0061C251 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					DBB53E6E20C912D10061C251 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = DBB53E5620C912CE0061C251;
+					};
+					DBB53E7920C912D10061C251 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = DBB53E5620C912CE0061C251;
+					};
+				};
+			};
+			buildConfigurationList = DBB53E5220C912CE0061C251 /* Build configuration list for PBXProject "FCCarouselControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB53E4E20C912CE0061C251;
+			productRefGroup = DBB53E5820C912CE0061C251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB53E5620C912CE0061C251 /* FCCarouselControl */,
+				DBB53E6E20C912D10061C251 /* FCCarouselControlTests */,
+				DBB53E7920C912D10061C251 /* FCCarouselControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB53E5520C912CE0061C251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB53E6720C912D00061C251 /* LaunchScreen.storyboard in Resources */,
+				DBB53E6420C912D00061C251 /* Assets.xcassets in Resources */,
+				DBB53E6220C912CE0061C251 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E6D20C912D10061C251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E7820C912D10061C251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB53E5320C912CE0061C251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB53E5F20C912CE0061C251 /* ViewController.m in Sources */,
+				DBB53E8E20C915C80061C251 /* FCCarouselView.m in Sources */,
+				DBB53E6A20C912D00061C251 /* main.m in Sources */,
+				DBB53E5C20C912CE0061C251 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E6B20C912D10061C251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB53E7420C912D10061C251 /* FCCarouselControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB53E7620C912D10061C251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB53E7F20C912D10061C251 /* FCCarouselControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB53E7120C912D10061C251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB53E5620C912CE0061C251 /* FCCarouselControl */;
+			targetProxy = DBB53E7020C912D10061C251 /* PBXContainerItemProxy */;
+		};
+		DBB53E7C20C912D10061C251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB53E5620C912CE0061C251 /* FCCarouselControl */;
+			targetProxy = DBB53E7B20C912D10061C251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBB53E6020C912CE0061C251 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB53E6120C912CE0061C251 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBB53E6520C912D00061C251 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB53E6620C912D00061C251 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBB53E8120C912D10061C251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBB53E8220C912D10061C251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB53E8420C912D10061C251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB53E8520C912D10061C251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBB53E8720C912D10061C251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCCarouselControl.app/FCCarouselControl";
+			};
+			name = Debug;
+		};
+		DBB53E8820C912D10061C251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FCCarouselControl.app/FCCarouselControl";
+			};
+			name = Release;
+		};
+		DBB53E8A20C912D10061C251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FCCarouselControl;
+			};
+			name = Debug;
+		};
+		DBB53E8B20C912D10061C251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FCCarouselControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilson.FCCarouselControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FCCarouselControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB53E5220C912CE0061C251 /* Build configuration list for PBXProject "FCCarouselControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB53E8120C912D10061C251 /* Debug */,
+				DBB53E8220C912D10061C251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB53E8320C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB53E8420C912D10061C251 /* Debug */,
+				DBB53E8520C912D10061C251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB53E8620C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB53E8720C912D10061C251 /* Debug */,
+				DBB53E8820C912D10061C251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB53E8920C912D10061C251 /* Build configuration list for PBXNativeTarget "FCCarouselControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB53E8A20C912D10061C251 /* Debug */,
+				DBB53E8B20C912D10061C251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB53E4F20C912CE0061C251 /* Project object */;
+}
