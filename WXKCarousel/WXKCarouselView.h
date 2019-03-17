@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FCCarouselView : UIView
+@interface WXKCarouselView : UIView
 
 @property(nonatomic, assign) int maxNumber;
 

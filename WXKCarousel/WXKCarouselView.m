@@ -6,14 +6,14 @@
 //  Copyright © 2018年 魏晓堃. All rights reserved.
 //
 
-#import "FCCarouselView.h"
+#import "WXKCarouselView.h"
 
 static CGFloat viewWidth = 0.f;
 static CGFloat viewHeight = 0.f;
 static NSInteger carouseTag = 1000;
 static NSInteger curentPage = 0;
 
-@interface FCCarouselView() <UIScrollViewDelegate>
+@interface WXKCarouselView() <UIScrollViewDelegate>
 
 @property(nonatomic, strong) NSMutableArray *imgArr;
 @property(nonatomic, strong) UIScrollView *scrollView;
@@ -22,7 +22,7 @@ static NSInteger curentPage = 0;
 
 @end
 
-@implementation FCCarouselView
+@implementation WXKCarouselView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -33,12 +33,16 @@ static NSInteger curentPage = 0;
     return self;
 }
 
+static UIColor * _Nonnull extracted() {
+    return [UIColor clearColor];
+}
+
 - (void)setupUI {
     _scrollView = ({
         UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.frame];
         scrollView.contentSize = CGSizeMake(viewWidth * 3, viewHeight);
         scrollView.contentOffset = CGPointMake(viewWidth, 0);
-        scrollView.backgroundColor = [UIColor yellowColor];
+        scrollView.backgroundColor = extracted();
         scrollView.pagingEnabled = YES;
         scrollView.delegate = self;
         [self addSubview:scrollView];
@@ -67,11 +71,10 @@ static NSInteger curentPage = 0;
     });
     
     
-    [self startTimer];
+    [self resetTimeer];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self endTimer];
     if (scrollView.contentOffset.x == 0) {
         // 上一页
         curentPage = curentPage == 0 ? ABS(curentPage - (_maxNumber - 1)) : curentPage - 1;
@@ -84,14 +87,15 @@ static NSInteger curentPage = 0;
         
     }
     _pageControl.currentPage = curentPage;
+    [self resetTimeer];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [self endTimer];
+    [self resetTimeer];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    [self startTimer];
+    [self resetTimeer];
 }
 
 #pragma mark -- action response
@@ -107,7 +111,6 @@ static NSInteger curentPage = 0;
     curImgView.image = self.imgArr[curentPage];
     lastImgView.image = self.imgArr[curentPage - 1 < 0 ? _maxNumber - 1 : curentPage - 1];
     nextImgView.image = self.imgArr[curentPage + 1 >= _maxNumber ? 0 : curentPage + 1];
-    [self startTimer];
 }
 
 - (void)reloadCurImageView {
@@ -122,12 +125,19 @@ static NSInteger curentPage = 0;
     [_scrollView setContentOffset:CGPointMake(2 * viewWidth, 0) animated:YES];
 }
 
+
+- (void)resetTimeer {
+    [self endTimer];
+    [self startTimer];
+}
+
 - (void)startTimer {
     _timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(scrollToNext) userInfo:nil repeats:YES];
 }
 
 - (void)endTimer {
     [_timer invalidate];
+    _timer = nil;
 }
 
 #pragma mark -- setters and getters

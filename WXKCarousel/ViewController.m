@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "FCCarouselView.h"
+#import "WXKCarouselView.h"
 
 @interface ViewController ()
 
-@property(nonatomic, strong) FCCarouselView *carouseView;
+@property(nonatomic, strong) WXKCarouselView *carouseView;
 
 @end
 
@@ -22,9 +22,8 @@
     
     CGRect screenFrame = [UIScreen mainScreen].bounds;
     _carouseView = ({
-        FCCarouselView *view = [[FCCarouselView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(screenFrame), 250)];
-        view.maxNumber = 9;
-        view.backgroundColor = [UIColor cyanColor];
+        WXKCarouselView *view = [[WXKCarouselView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(screenFrame), 250)];
+        view.maxNumber = 5;
         view;
     });
     [self.view addSubview:_carouseView];
@@ -41,7 +40,7 @@
     for (int i = 0; i < 9; i ++) {
         __weak typeof(self)weakSelf = self;
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            int sleepTime = arc4random() % (10 - 0);
+            int sleepTime = arc4random() % (10 - 1);
             [NSThread sleepForTimeInterval:sleepTime];
             UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%d", i]];
             
